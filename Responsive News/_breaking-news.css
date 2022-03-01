@@ -1,0 +1,143 @@
+/* BREAKING NEWS SECTION */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.post {
+  display: flex;
+  text-decoration: none;
+}
+.post-image {
+  width: 65%;
+  display: flex;
+}
+.post-textbox {
+  width: 35%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+.post-content {
+  height: 95%;
+}
+.post-content h2 {
+  font-size: 15px;
+}
+.post-content p {
+  font-size: 7px;
+}
+.info-meta {
+  display: flex;
+  height: 8px;
+  width: 100%;
+  font-size: 8px;
+  color: gray;
+}
+.info-meta span {
+  padding-right: 3px;
+}
+.info-meta-locator {
+  border-left: 1px solid gray;
+  color: gray;
+  padding-left: 2px;
+}
+.post-list {
+  margin-top: 10px;
+  display: flex;
+  margin-left: 12px;
+}
+.post-list li {
+  margin-right: 15px;
+}
+.post-list li a {
+  display: flex;
+  width: 100%;
+  font-size: 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+  .post-container {
+    position: relative;
+  }
+  .post {
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .post-content {
+    height: 40%;
+    overflow: hidden;
+  }
+  .post-content h2 {
+    font-size: 20px;
+  }
+  .post-content p {
+    font-size: 12px;
+  }
+  .post-list {
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 120px;
+    position: absolute;
+    width: 30%;
+    border: none;
+    right: 0px;
+    bottom: 20px;
+  }
+  .post-list li a {
+    font-size: 12px;
+  }
+  .info-meta {
+    font-size: 10px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1400px) {
+  .post-container {
+    width: 75%;
+    position: relative;
+    border: none;
+  }
+  .post {
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .post-image {
+    width: 69%;
+  }
+  .post-textbox {
+    padding-left: 9px;
+    min-height: 120px;
+    max-height: 120px;
+  }
+  .post-content h2 {
+    font-size: 18px;
+  }
+  .post-content > p {
+    padding-top: 5px;
+    font-size: 11px;
+  }
+  .post-list {
+    position: absolute;
+    height: 100px;
+    width: 30%;
+    flex-direction: column;
+    border: none;
+    right: 0;
+    bottom: 50px;
+  }
+  .post-list li a {
+    font-size: 11px;
+  }
+  .info-meta {
+    font-size: 11px;
+    height: 11px;
+  }
+}
